@@ -1,11 +1,17 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 main {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,4 +19,34 @@ main {
 
 canvas {
   display: block;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+/* Position the slider to the right side of the screen */
+.slider-container {
+  position: fixed;
+  top: 50%;
+  right: 10px;  /* Adjust as needed */
+  transform: translateY(-50%);
+  z-index: 100; /* To make sure the slider is above other elements */
+  display: flex;
+  align-items: center;  /* Align items in a row */
+}
+
+/* Style the slider */
+#squareSlider {
+  width: 200px;  /* Adjust the width of the slider */
+  transform: rotate(90deg);  /* Rotate the slider to be vertical */
+}
+
+/* Style the value display */
+#sliderValue {
+  margin-left: 10px;  /* Add some space between the slider and the value */
+  font-size: 16px;
 }
